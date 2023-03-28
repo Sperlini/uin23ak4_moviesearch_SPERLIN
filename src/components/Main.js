@@ -1,14 +1,15 @@
-import MovieCards from './MovieCards';
-import SearchBar from './SearchBar';
-import { Link } from 'react-router-dom';
-export default function Main({}){
+import SearchBar from "./SearchBar";
+import MovieCards from "./MovieCards";
+
+export default function Main({setSearch, getMovies, movies}){ 
     return(
-    <>
-    <SearchBar />
-
-
-
-    </>
-
-    )
+        <>
+        <SearchBar setSearch={setSearch} getMovies={getMovies} />
+        <section className="frontpage">
+            {movies.map((movie, index) => (
+                <MovieCards key={index} title={movie.Title} img={movie.Poster} year={movie.Year}/> 
+                ))}
+        </section>
+        </>
+    );
 }

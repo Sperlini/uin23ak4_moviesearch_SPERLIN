@@ -1,7 +1,7 @@
-export default function SearchResults({setSearch,getMovies}){
+export default function SearchBar({setSearch,getMovies}){
     
     const handleSubmit = (event) =>{
-        event.preventdefault()
+        event.preventDefault()
     }
 
     const handleSearch = (event) =>{
@@ -12,7 +12,7 @@ export default function SearchResults({setSearch,getMovies}){
     return(
      <form onSubmit={handleSubmit}>
         <input
-        className="seachBar"
+        className="searchBar"
         type="search"
         placeholder="Search for a movie"
         onChange={handleSearch}

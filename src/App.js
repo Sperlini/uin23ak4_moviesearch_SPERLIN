@@ -1,6 +1,11 @@
+
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {Route, Routes} from 'react-router-dom'
+import Main from './components/Main';
+import Layout from './components/Layout';
+
+
 
 function App() {
   const [movies , setMovies] = useState([])
@@ -8,9 +13,9 @@ function App() {
   
   const getMovies = async() =>{
     
-    const response = await fetch (`https://www.omdbapi.com/?s=${search}&type=movie&apikey=55ce959a`)
+    const response = await fetch(`https://www.omdbapi.com/?s=${search}&type=movie&apikey=55ce959a`)
     const data = await response.json()
-    setMovies(data.seach)
+    setMovies(data.Search)
 
   }
 
@@ -20,9 +25,9 @@ function App() {
   
   return (
     <Routes>
-      <Route>
+      <Route element={<Layout/>}>
 
-        <Route index element={<Main />} />
+        <Route index element={<Main movies={movies} setSearch={setSearch} getMovies={getMovies} />} />
 
       </Route>
     </Routes>
