@@ -12,7 +12,7 @@ export default function SearchBar({setSearch,getMovies}){
     return(
      <form onSubmit={handleSubmit}>
         <input
-        className="searchBar"
+        className="searchbar"
         type="search"
         placeholder="Search for a movie"
         onChange={handleSearch}

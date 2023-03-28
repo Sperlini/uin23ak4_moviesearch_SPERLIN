@@ -5,7 +5,7 @@ export default function Layout(){
         <div id="container">
         <header>
           <Link to="/">
-              <h1>MovieSearch HIOF</h1>
+              <h1 className="logo">MovieSearch HIOF</h1>
           </Link>
           
         </header>

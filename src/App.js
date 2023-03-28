@@ -17,8 +17,9 @@ function App() {
     const data = await response.json()
     setMovies(data.Search)
     console.log(data)
+    
   }
-
+ 
   useEffect(() =>{
     getMovies()
   }, [])
@@ -33,5 +34,5 @@ function App() {
     </Routes>
   );
 }
-
+ //Inspirert av recipe api brukt i forelsning. 
 export default App;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-export default function MovieCards({title, year, img, imdbID}){
+export default function MovieCards({title, year, poster, imdbID}){
     
     
     
@@ -11,7 +11,8 @@ export default function MovieCards({title, year, img, imdbID}){
         const url = movID;
         const response = await fetch(url);
         const data = await response.json();
-        setMovieInfo(data);    
+        setMovieInfo(data);
+        console.log(movieInfo)    
     }
 
     useEffect(()=>{
@@ -21,17 +22,20 @@ export default function MovieCards({title, year, img, imdbID}){
     
     return(
         <article className="moviecard">
-
-            <img src={img} alt={title} />
+        
+            <img src={poster} />
             <section className="movieInfo">
             <h2>{title}</h2>
-             <p className="p1">Published:{year}</p>
-             <p className="p2">Genre:{movieInfo.Genre}</p>
-             <p className="p3">Directed by:{movieInfo.Director}</p>
+            <section className="stylemovierating"><p>MovieScore:</p>
+             <h2>{movieInfo.imdbRating}/10</h2></section>
             
-            {movieInfo.Awards !== '' && movieInfo.Awards !== 'N/A' &&
-                    <p className="p4">Awards:{movieInfo.Awards}</p>
-            }
+             <p>Runtime:{movieInfo.Runtime}</p>
+             <p className="stylePublish">Published:..{year}{movieInfo.released}</p>
+             <p className="styleGenre">Genre:..{movieInfo.Genre}</p>
+             <p className="styleDirector">Directed by:...{movieInfo.Director}</p>
+             <p className="styleDesc">Description:..{movieInfo.Plot}</p>
+             <p className="styleAwards">Awards:..{movieInfo.Awards}</p>
+            
             </section>
         </article>
     )}  
