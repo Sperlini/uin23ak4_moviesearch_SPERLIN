@@ -1,107 +1,16 @@
-#container {
-    width: 100%;
-    max-width: 1400px;
-    border-left: 5px solid #5e1a15;
-    border-right: 5px solid #5e1a15;
-    border-bottom: 5px solid #5e1a15;
-    padding: 2rem;
-    margin: 0 auto;
-    background-color: black;
-}
-header {
-    background-image: url('felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 1rem;
-  }
-  
-h1{
-    color: white;
-    text-decoration: none;
-    padding-bottom: 10rem;
-    font-family: 'Pacifico'
-}
-.frontpage h2{
-    width: 100%;
-    color:white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    
+article.moviecard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-.searchBTN {
-  height: 35px;
-  margin-bottom: 1rem;
-  max-width: 87px;
-  width: 100%;
-  border: 2px solid #5e1a15;
-  font-family: 'Montserrat', sans-serif;
-}
-.searchInput {
-    height: 35px;
-    max-width: 600px;
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.7rem;
-    margin-left: 357px;
-    border: 2px solid #5e1a15;
-    font-family: 'Montserrat', sans-serif;
-}
-.moviePoster {
-    max-height: 400px;
-    max-width: 350px;
+form {
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
-.moviecard {
-    max-width: 650px;
-    width: 100%;
-    padding: 1rem;
-    background-color: white;
-    display: flex;
-    margin: auto;
-    margin-bottom: 1rem;
-    border: 5px solid #5e1a15;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    background-color: black;
-  }
-
-  .movieInfo {
-   padding: 1rem;
-  }
-  .movieInfo p {
-    color: white;
-    text-align: center;
-    padding: 0.5em 0.7em;
-    font-weight: bold;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
-    flex-basis: 10em;
-    border-radius: 10px;
-  }
-  .p1 {
-    background-color: #f56342;
-  }
-
-  .p2 {
-    background-color: #aaad53;
-  }
-  .p3 {
-    background-color: #58ad53;
-  }
-  .p4 {
-    background-color: #a753ad;
-  }
-footer {
-    color: white;
-    text-align: center;
-}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvbWFpbi5zY3NzIiwibWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtBQ0NKOztBREVBO0VBQ0ksYUFBQTtFQUNBLGFBQUE7RUFDQSx5QkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxzQkFBQTtBQ0NKIiwiZmlsZSI6Im1haW4uY3NzIn0= */

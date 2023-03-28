@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import {Route, Routes} from 'react-router-dom'
 import Main from './components/Main';
 import Layout from './components/Layout';
-
+import './css/main.css'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     const response = await fetch(`https://www.omdbapi.com/?s=${search}&type=movie&apikey=55ce959a`)
     const data = await response.json()
     setMovies(data.Search)
-
+    console.log(data)
   }
 
   useEffect(() =>{

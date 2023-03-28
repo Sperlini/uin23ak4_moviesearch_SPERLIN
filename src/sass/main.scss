@@ -1,0 +1,14 @@
+article.moviecard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+form {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
