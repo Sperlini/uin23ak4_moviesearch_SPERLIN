@@ -33,7 +33,6 @@ function App() {
         <Route path=':slug' element={<MoviePage recipes={getMovies} />}/>
       </Route>
     </Routes>
-  );
-}
+  );}
  //Inspirert av recipe api samt news api brukt i forelesning. 
 export default App;
