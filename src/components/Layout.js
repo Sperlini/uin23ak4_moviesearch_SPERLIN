@@ -12,8 +12,10 @@ export default function Layout(){
         <main>
           <Outlet />
         </main>
-        <footer>
-  
+        <footer className="styleFooter">
+            <p>UIN Arbeidskrav 4 </p>
+            <p>Alexander Sperlin 2023 </p>
+            <p>Kontakt oss: Alexasp@hiof.no</p>
         </footer>
       </div>  
     )

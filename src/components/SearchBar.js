@@ -6,6 +6,7 @@ export default function SearchBar({setSearch,getMovies}){
 
     const handleSearch = (event) =>{
         setSearch(event.target.value)
+        
     }
 
         
@@ -15,7 +16,9 @@ export default function SearchBar({setSearch,getMovies}){
         className="searchbar"
         type="search"
         placeholder="Search for a movie"
-        onChange={handleSearch}
+        required={true}
+        minLength={3}
+        onChange={handleSearch} 
         />
         <button className="searchButton" onClick={getMovies} type="submit">
                 Search.....

@@ -1,3 +1,8 @@
+#root {
+    background-color: #7ec9e3;
+}
+
+
 article.moviecard {
     display: flex;
     flex-direction: row;
@@ -21,36 +26,90 @@ form {
 #container {
     width: 100%;
     max-width: 1200px;
-    background: #fff;
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    background: lightsteelblue;
     padding: 2rem;
     margin: 0 auto;
+    
   }
 
   
-input.searchbar {
+.searchbar {
     width: 500px;
-  }
+    padding: .5rem 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    
+}
+    
+input.searchbar {
+        text-align: center;
+        background-color: #7ec9e3;
+    }
+      
 
 
-  h1.logo {
+
+h1.logo {
     display: grid;
     justify-content: space-around;
 }
 
 img {
     height: auto;
-    max-width: 250px
+    max-width: 750px;
+    min-width: 500px;
+        
 }
   
 section.movieInfo {
     padding: 20px;
 }
 
-
-  .stylePublish{
-    background-color: pink;
+.styleRuntime{
+    background-color: #7ec9e3;
+    max-width: 120px;
+  }
+.stylePublish{
+    background-color: #7ec9e3;;
+    max-width: 120px;
+  }
+.styleGenre{
+    background-color: #7ec9e3;
+    max-width: 120px;
+  }
+.styleDirector{
+    background-color: #7ec9e3;
+    max-width: 120px;
+  }
+.styleDesc{
+    background-color: #7ec9e3;
+    max-width: 400px;
+  }
+.styleAwards{
+    background-color: #7ec9e3;
     max-width: 200px;
   }
+
+
+  section.stylemovierating {
+    padding-bottom: 10px;
+}
+
+.searchButton{
+    
+        padding: 0.5rem 2rem;
+        background-color: #7ec9e3;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+    
+}
+
+.styleFooter {
+    display: flex;
+    align-items: center;
+    justify-items: end;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
