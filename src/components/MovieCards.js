@@ -25,16 +25,17 @@ export default function MovieCards({title, year, poster, imdbID}){
             <img className="stylePoster" src={poster} />
             <section className="movieInfo">
             <h2>{title}</h2>
-            <section className="stylemovierating"><p>MovieScore:</p>
+            <section className="stylemovierating">
+             <p>MovieScore:</p>
              <h2>{movieInfo.imdbRating}/10</h2></section>
              <h4>Runtime:</h4>
              <p className="styleRuntime">{movieInfo.Runtime}</p>
              <h4>Published:</h4>
              <p className="stylePublish">{year}{movieInfo.released}</p>
-             <h4>Genre:</h4>
-             <p className="styleGenre">{movieInfo.Genre}</p>
              <h4>Directed by:</h4>
              <p className="styleDirector">{movieInfo.Director}</p>
+             <h4>Genre:</h4>
+             <p className="styleGenre">{movieInfo.Genre}</p>
              <h4>Description:</h4>
              <p className="styleDesc">{movieInfo.Plot}</p>
              <h4>Awards:</h4>
